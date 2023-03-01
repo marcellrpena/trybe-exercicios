@@ -1,0 +1,5 @@
+antes de começar um exercicio python, na raiz do projeto usar o código:
+-> python3 -m venv .venv(depois do ponto pode ser qualquer nome)
+
+logo após acessamos o ambiente virtual com o comando:
+-> source .<nome criado no primeiro comando>/bin/activate
