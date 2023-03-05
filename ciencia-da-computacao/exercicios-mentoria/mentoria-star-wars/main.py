@@ -47,13 +47,15 @@ print(f"{darth_vader.nome}: {darth_vader.speak()}")
 
 while darth_vader.hp > 0:
     print(
-        f"{darth_vader.nome} (HP {darth_vader.hp}) ataca {anakin_skywalker.nome} (HP {anakin_skywalker.hp})"
+        f"{darth_vader.nome} (HP {darth_vader.hp})" +
+        f"ataca {anakin_skywalker.nome} (HP {anakin_skywalker.hp})"
     )
     print(darth_vader.atack(anakin_skywalker))
     # personagem2.falar()
     if anakin_skywalker.hp > 0:
         print(
-            f"{anakin_skywalker.nome} (HP {anakin_skywalker.hp}) contra-ataca {darth_vader.nome} (HP {darth_vader.hp})"
+            f"{anakin_skywalker.nome} (HP {anakin_skywalker.hp})"
+            + f" contra-ataca {darth_vader.nome} (HP {darth_vader.hp})"
         )
         print(anakin_skywalker.backfire(darth_vader))
         # personagem3.falar()
