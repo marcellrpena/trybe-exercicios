@@ -1,8 +1,9 @@
-from aula_2_2.navigator import NavigationStrategy, Navigator
+from navigation.navigator import NavigationStrategy, Navigator
+
 
 # herda de NavigationStrategy o metodo construtor build
 class WalkStrategy(NavigationStrategy):
-    #--------STRATEGY------------
+    # --------STRATEGY------------
     # cls => busca a classe de destino em NavigatorStrategy
     @classmethod
     def build_route(cls, departure, arrrival):
@@ -24,8 +25,8 @@ class CarStrategy():
         print(f"Rota de carro saindo de {departure} para {arrrival}")
 
 
-rota1 = Navigator(WalkStrategy)
-rota1.build_route("centro", "Morada do Sol")
+# rota1 = Navigator(WalkStrategy)
+# rota1.build_route("centro", "Morada do Sol")
 # O que acontece aqui?
 # 1º Navigator recebe a classe WalkStrategy como parametro
 
