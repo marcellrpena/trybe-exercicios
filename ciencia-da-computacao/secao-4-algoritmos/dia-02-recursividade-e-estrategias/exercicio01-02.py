@@ -12,8 +12,17 @@ def count_pair_rec(n):
         list.append(n)
     if n == 1:
         return list
-    new_list = count_pair_rec(n - 1) + list
-    return new_list
+    return count_pair_rec(n - 1) + list
+
+
+def count_pair_num(n):
+    pair = 0
+    if n % 2 == 0:
+        pair += 1
+    if n == 1:
+        return pair
+    return count_pair_num(n - 1) + pair
 
 
 print(count_pair_rec(10))
+print(count_pair_num(10))
